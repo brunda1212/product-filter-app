@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https//Amazon.in</title>
+</head>
+<body style="padding:0;margin:0; font-family: Arial, sans-serif;">
+
+  <div style="
+    background-color:#131921; 
+    padding:12px 20px; 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between;
+  ">
+    <div style="display:flex; align-items:center;">
+      <img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" style="height:50px; margin-right:15px;">
+      <p style="color:white; font-size:16px; margin:0; line-height:18px;">Deliver to<br><span style="font-weight:bold;">India</span></p>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:12px;">
+      <select id="categoryDropdown" style="
+        height:40px; 
+        font-size:16px; 
+        border-radius:5px; 
+        padding:5px 8px;
+        cursor:pointer;
+      ">
+        <option value="all">All Categories</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="electronics">Electronics</option>
+      </select>
+
+      <select id="sortDropdown" style="
+        height:40px; 
+        font-size:16px; 
+        border-radius:5px; 
+        padding:5px 8px;
+        cursor:pointer;
+      ">
+        <option value="default">Sort By</option>
+        <option value="az">A - Z</option>
+        <option value="priceLowHigh">Price Low - High</option>
+        <option value="priceHighLow">Price High - Low</option>
+      </select>
+
+      <input type="text" placeholder="Search Amazon" style="
+        width:250px; 
+        height:36px; 
+        font-size:16px; 
+        padding:4px 10px; 
+        border-radius:6px; 
+        border:1px solid #ccc;
+      ">
+    </div>
+  </div>
+
+  <div id="products" style="display: grid; grid-template-columns: repeat(3, 1fr); padding:10px;"></div>
+
+  <script src="./style.js"></script>
+</body>
+</html>
